@@ -11,6 +11,7 @@ const ExpensesList = (props) => {
   const filterItemsByYear = (selectedYear) => {
     setFilteredYear(selectedYear);
   };
+  
   return (
     <Card className="expenses">
       <ExpenseFilter selected={filteredYear} onSelectFilter={filterItemsByYear} />
